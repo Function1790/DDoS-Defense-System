@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    user-select: none;
+}
+
+body {
+    background-color: #101013;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.block {
+    width: 100%;
+    background-color: #17171C;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.block-header {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.primary-title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.arrowBtnWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowBtn{
+    width: 35px;
+    height: 35px;
+}
+
+.block-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    width: 100%;
+    margin-top: 5px;
+    padding: 20px 0;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.headImgWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+}
+
+.headImg {
+    border-radius: 50%;
+    background-color: #385472;
+    width: 50px;
+    height: 50px;
+}
+
+.blockContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.explain {
+    color: #9E9EA4;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.title {
+    color: #E4E4E5;
+    font-size: 20px;
+    font-weight: 500;
+}

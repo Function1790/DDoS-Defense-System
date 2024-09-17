@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/receipt.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header"></div>
+        <div class="container">
+            <div class="content">
+                <div class="block">
+                    <div class="block-header display">
+                        <div class="primary-title">{{title}}</div>
+                        <div class="primary-account">{{account}}</div>
+                        <div class="primary-discript">{{descript}}</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block-header">
+                        <div class="primary-title">페이 리스트</div>
+                        <div class="arrowBtnWrap">
+                            <img src="/img/btn.png" class="arrowBtn">
+                        </div>
+                    </div>
+                    <div class="block-container">
+                        
+                        {{payList}}
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

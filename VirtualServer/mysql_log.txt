@@ -1,0 +1,40 @@
+create table user(num int not null auto_increment, 
+    uid text not null, 
+    upw text not null,
+    name text not null, 
+    club_id text not null, 
+    primary key(num));
+
+insert into user (uid,upw,name,club_id) value('guest', 'guest', 'Guest', 'test');
+insert into user (uid,upw,name,club_id) value('test001', 'test001', '홍길동', 'test');
+insert into user (uid,upw,name,club_id) value('test002', 'test002', '김철수', 'test');
+insert into user (uid,upw,name,club_id) value('test003', 'test003', '이기철', 'test');
+insert into user (uid,upw,name,club_id) value('test004', 'test004', '이기영', 'test');
+
+create table club(num int not null auto_increment, 
+    clud_id text not null, 
+    name text not null, 
+    member text not null, 
+    primary key(num));
+
+insert into club (clud_id,name,member) value('test', '2학년 3반', '["Guest"]');
+
+create table receipt(num int not null auto_increment, 
+    title text not null,
+    descript text,
+    club_id text not null,
+    account text not null,
+    host_id text not null, 
+    created_date datetime not null,
+    data json not null, 
+    primary key(num));
+
+insert into receipt (title, descript, host_id, club_id, account, created_date, data) value('노래방 2시간', '어제 간사람 N빵', 'guest', 'test', '100064759959 토스뱅크', '2023-12-31 13:10:21', '{}');
+insert into receipt (title, descript, host_id, club_id, account, created_date, data) value('명륜진사 갈비', '화요알까지 내라', 'guest', 'test', '100064759959 토스뱅크', '2023-12-31 18:08:12', '{}');
+update receipt set data='[
+    {"uid":"test001", "name":"홍길동", "price":10000, "status":1},
+    {"uid":"test002", "name":"김철수", "price":20000, "status":0},
+    {"uid":"test003", "name":"이기철", "price":20000, "status":1},
+    {"uid":"test004", "name":"이기영", "price":3000, "status":1}
+]';
+alter table receipt add status int;

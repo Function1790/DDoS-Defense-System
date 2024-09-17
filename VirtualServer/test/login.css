@@ -1,0 +1,57 @@
+.block {
+    flex-direction: column;
+    height: 700px;
+}
+
+.login-header{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapInput > input {
+    background-color:transparent;
+    border: none;
+    border-bottom: 1px solid rgba(202, 202, 202, 0.512);
+    outline: none;
+    padding: 10px;
+    margin: 15px;
+    color: #E4E4E5;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+input:hover {
+    border-bottom: 1px solid rgba(202, 202, 202, 1);
+}
+
+.login-footer {
+    margin-top: 40px;
+}
+
+.btnWrap{
+    width: 150px;
+    height: 70px;
+}
+
+#submit {
+    width: 150px;
+    height: 70px;
+    background-color: rgba(99, 99, 99, 0.085);
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.1s;
+}
+
+#submit:hover {
+    background-color: rgba(99, 99, 99, 0.151);
+}
